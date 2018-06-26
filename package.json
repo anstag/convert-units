@@ -4,7 +4,7 @@
   "description": "Conversion of units from one number system to another, in free form.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "author": "Ampilogov Nikolay",
   "license": "ISC",
