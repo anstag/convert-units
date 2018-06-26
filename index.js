@@ -3,6 +3,10 @@ let convert = require('convert-units');
 let express = require('express');
 let app = express();
 
+app.get('/units', function (req, res) {
+    res.send(units.data);
+});
+
 app.get('/', function (req, res) {
     let value = req.query.value ? Number(req.query.value) : 0;
     let source = req.query.source ? req.query.source : 0;
@@ -31,9 +35,3 @@ app.get('/', function (req, res) {
 app.listen(3000, function () {
     console.log('Server run...');
 });
-
-
-// ?value=15&source=kelvin&target=degree_fahrenheit
-// console.log(units.searchKey(target));
-// console.log(convert().possibilities());
-// console.log(convert().describe('kV'));

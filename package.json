@@ -1,15 +1,15 @@
 {
   "name": "convert-units-anstag",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Conversion of units from one number system to another, in free form.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "author": "",
+  "author": "Ampilogov Nikolay",
   "license": "ISC",
   "dependencies": {
-    "convert-units": "^2.3.2",
+    "convert-units": "^2.3.4",
     "express": "^4.16.2"
   }
 }
